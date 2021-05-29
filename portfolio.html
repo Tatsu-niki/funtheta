@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="portfolio_pcdesign.css" media="screen and (min-width: 900px)">
+  <link rel="stylesheet" href="smartstyle.css" media="screen and (max-width: 899px)">
+  <title>Funseta</title>
+</head>
+
+<body>
+<div class="page_title">
+    <p>作品紹介</p>
+</div>
+<div class="content1">
+    <div class="work">
+        <p class="work_title title_fleft">ホームページ</p>
+        <div class="line line_fleft">
+        </div>
+        <p class="work_day day_fleft">Made:2021-02-15</p>
+    </div>
+    <img src="image/portfolio1.png" class="img_fright">
+</div>
+<div class="content2">
+    <img src="image/portfolio2.png" class="img_fleft">
+    <div class="work">
+        <p class="work_title title_fright">イラスト</p>
+        <div class="line line_fright">
+        </div>
+        <p class="work_day day_fright">Made:2021-02-15</p>
+    </div>
+</div>
+<div class="content3">
+    <div class="work">
+        <p class="work_title title_fleft">動画編集</p>
+        <div class="line line_fleft">
+        </div>
+        <p class="work_day day_fleft">Made:2021-02-15</p>
+    </div>
+    <img src="image/portfolio3.png" class="img_fright">
+</div>
+<div class="content4">
+    <img src="image/portfolio4.png" class="img_fleft">
+    <div class="work">
+        <p class="work_title title_fright">写真撮影</p>
+        <div class="line line_fright">
+        </div>
+        <p class="work_day day_fright">Made:2021-02-15</p>
+    </div>
+</div>
+
+<footer>
+    <div class="info">
+        <p>Home</p>
+        <p>住所</p>
+        <p>企業情報</p>
+    </div>
+    <p class="contact">問い合わせ</p>
+</footer>
+
+<script src="scrollreveal.min.js"></script>
+<script>
+    window.sa= new ScrollReveal();
+    var ScrollrevealFade = {
+        origin: 'left',
+        distance: '50px',//移動範囲
+        scale: 1,//拡大表示（１で横スクロールが始まる）
+        rotate: { x: 0, y: 0, z: 0 }, //xは縦回転、yは横回転、zは傾き（風車みたいな感じ）
+        duration: 1200, //アニメーションの速度
+        delay :200 //要素が表示するまでの待機時間（ディレイ）
+    };
+    sa.reveal('.title_fleft', ScrollrevealFade, 100);
+
+    window.sb= new ScrollReveal();
+    var ScrollrevealFade = {
+        origin: 'left',
+        distance: '50px',//移動範囲
+        scale: 1,//拡大表示（１で横スクロールが始まる）
+        rotate: { x: 0, y: 0, z: 0 }, //xは縦回転、yは横回転、zは傾き（風車みたいな感じ）
+        duration: 1200, //アニメーションの速度
+        delay :400 //要素が表示するまでの待機時間（ディレイ）
+    };
+    sb.reveal('.line_fleft', ScrollrevealFade, 100);
+
+    window.sc= new ScrollReveal();
+    var ScrollrevealFade = {
+        origin: 'left',
+        distance: '50px',//移動範囲
+        scale: 1,//拡大表示（１で横スクロールが始まる）
+        rotate: { x: 0, y: 0, z: 0 }, //xは縦回転、yは横回転、zは傾き（風車みたいな感じ）
+        duration: 1200, //アニメーションの速度
+        delay :600 //要素が表示するまでの待機時間（ディレイ）
+    };
+    sc.reveal('.day_fleft', ScrollrevealFade, 100);
+
+    window.sd= new ScrollReveal();
+    var ScrollrevealFade = {
+        origin: 'right',
+        distance: '50px',//移動範囲
+        scale: 1,//拡大表示（１で横スクロールが始まる）
+        rotate: { x: 0, y: 0, z: 0 }, //xは縦回転、yは横回転、zは傾き（風車みたいな感じ）
+        duration: 1200, //アニメーションの速度
+        delay :600 //要素が表示するまでの待機時間（ディレイ）
+    };
+    sd.reveal('.img_fright', ScrollrevealFade, 100);
+
+    window.se= new ScrollReveal();
+    var ScrollrevealFade = {
+        origin: 'right',
+        distance: '50px',//移動範囲
+        scale: 1,//拡大表示（１で横スクロールが始まる）
+        rotate: { x: 0, y: 0, z: 0 }, //xは縦回転、yは横回転、zは傾き（風車みたいな感じ）
+        duration: 1200, //アニメーションの速度
+        delay :200 //要素が表示するまでの待機時間（ディレイ）
+    };
+    se.reveal('.title_fright', ScrollrevealFade, 100);
+
+    window.sf= new ScrollReveal();
+    var ScrollrevealFade = {
+        origin: 'right',
+        distance: '50px',//移動範囲
+        scale: 1,//拡大表示（１で横スクロールが始まる）
+        rotate: { x: 0, y: 0, z: 0 }, //xは縦回転、yは横回転、zは傾き（風車みたいな感じ）
+        duration: 1200, //アニメーションの速度
+        delay :400 //要素が表示するまでの待機時間（ディレイ）
+    };
+    sf.reveal('.line_fright', ScrollrevealFade, 100);
+
+    window.sg= new ScrollReveal();
+    var ScrollrevealFade = {
+        origin: 'right',
+        distance: '50px',//移動範囲
+        scale: 1,//拡大表示（１で横スクロールが始まる）
+        rotate: { x: 0, y: 0, z: 0 }, //xは縦回転、yは横回転、zは傾き（風車みたいな感じ）
+        duration: 1200, //アニメーションの速度
+        delay :600 //要素が表示するまでの待機時間（ディレイ）
+    };
+    sg.reveal('.day_fright', ScrollrevealFade, 100);
+
+    window.sh= new ScrollReveal();
+    var ScrollrevealFade = {
+        origin: 'left',
+        distance: '50px',//移動範囲
+        scale: 1,//拡大表示（１で横スクロールが始まる）
+        rotate: { x: 0, y: 0, z: 0 }, //xは縦回転、yは横回転、zは傾き（風車みたいな感じ）
+        duration: 1200, //アニメーションの速度
+        delay :600 //要素が表示するまでの待機時間（ディレイ）
+    };
+    sh.reveal('.img_fleft', ScrollrevealFade, 100);
+</script>
+</body>
