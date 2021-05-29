@@ -1,0 +1,197 @@
+
+body{
+    width: 100%;
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+    
+    .page_title{
+        position: absolute;
+        z-index: 1;
+        top: 50px;
+        left: -25px;
+        height: 550px;
+        p{
+            margin: 0;
+            font-family: "Abys";
+            font-size: 500px;
+            color: #FFB4F3;
+            -webkit-text-stroke: 7px #B7A9A9;
+        }
+    }
+    .triangle1{
+        width: 0;
+        height: 0;
+        z-index: 0;
+        position: absolute;
+        border-style: solid;
+        border-width: 780px 1250px 0 1250px;
+        border-color: transparent;
+        border-top-color: #FDFF02;
+        left: auto;
+        right: -1250px;
+        top: 0px;
+    }
+    
+    .circle1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 1200px;
+        height: 1200px;
+        background-color: #FDFF02;
+        left: auto;
+        right: -650px;
+        top: 1270px;
+        border-radius: 50%;
+        .center_circle1{
+            width: 650px;
+            height: 650px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    }
+    
+    .activity1{
+        width: 2000px;
+        position: absolute;
+        left: -670px;
+        top: 1000px;
+        display: flex;
+        .sentence{
+            margin-left: 70px;
+            p{
+                font-family: "Hiragino Kaku Gothic ProN";
+                font-size: 20px;
+                color: #707070;
+            }
+            .title{
+                font-family: "abys";
+                font-size: 70px;
+            }
+        }
+    }
+    
+    .activity2{
+        position: absolute;
+        width: 1080px;
+        height: 1350px;
+        background-color: #FFB4F3;
+        top: 1900px;
+        left: 230px;
+        z-index: 0;
+        .sentence{
+            margin-left: 200px;
+            margin-top: 300px;
+            p{
+                font-family: "Hiragino Kaku Gothic ProN";
+                font-size: 20px;
+                color: white;
+            }
+            .title{
+                font-family: "abys";
+                font-size: 70px;
+                margin-bottom: 70px;
+            }
+            .detail{
+                font-family: "abys";
+                font-size: 70px;
+                margin-left: 300px;
+                margin-top: 100px;
+            }
+        }
+    }
+    
+    .activity3{
+        position: absolute;
+        width: 800px;
+        height: 1200px;
+        top: 2800px;
+        right: 50px;
+        display: flex;
+        z-index: 1;
+    }
+    
+    .activity4{
+        position: absolute;
+        top: 4550px;
+        left: 70px;
+        display: flex;
+        width: 1600px;
+        height: 520px;
+        .sentence{
+            margin-left: 70px;
+            p{
+                font-family: "abys";
+                font-size: 20px;
+                color: #707070;
+            }
+            .title{
+                font-family: "abys";
+                font-size: 70px;
+            }
+        }
+    }
+    
+    .circle2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 860px;
+        height: 860px;
+        background-color: #FDFF02;
+        left: -400px;
+        right: auto;
+        top: 3450px;
+        border-radius: 50%;
+        .center_circle2{
+            width: 440px;
+            height: 440px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    }
+    
+    .triangle2{
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-style: solid;
+        border-width: 0 1600px 1000px 1600px;
+        border-color: transparent;
+        border-bottom-color: #FDFF02;
+        left: auto;
+        right: -1600px;
+        top: 4700px;
+    }
+   
+}
+
+footer{
+    position: absolute;
+    top: 5700px;
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    background-color: #FFB4F3;
+    display: flex;
+    .info{
+        margin-top: 40px;
+        margin-left: 60px;
+        p{
+            font-family: "Hiragino Kaku Gothic ProN";
+            font-size: 36px;
+            margin: 0;
+            margin-top: 10px
+        }
+    }
+    .contact{
+        margin-right: 280px;
+        margin-left: auto;
+        margin-top: 120px;
+        font-family: "Hiragino Kaku Gothic ProN";
+        font-size: 45px;
+    }
+}
