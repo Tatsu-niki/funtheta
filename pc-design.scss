@@ -4,28 +4,28 @@
 
 header{
     margin: 0;
-    height : 120px;
+    height : 90px;
     background-color: #0F026F;
     display: flex;
     .logo{
-        width:200px;
-        height:120px;
+        width:150px;
+        height:90px;
         position: relative;
         z-index: 1;
         text-align: center;
         margin: 0;
-        margin-left: 40px;
+        margin-left: 30px;
         img{
             margin-left: auto;
             margin-right: auto;
-            width:120px;
-            height:120px;
+            width:90px;
+            height:90px;
             object-fit: contain;
         }
     }
     .logo::before{
-        width:200px;
-        height:120px;
+        width:150px;
+        height:90px;
         content: "";
         position: absolute;
         top: 0;
@@ -40,7 +40,7 @@ header{
         margin-right: auto;
         margin-top: auto;
         margin-bottom: auto;
-        margin-left: 50px;
+        margin-left: 35px;
         ul.nav{
             list-style: none;
             display: flex; /*横並びにする*/
@@ -50,9 +50,9 @@ header{
         }
         ul.nav li a{
             position: relative;
-            padding: 45px 60px;
+            padding: 33px 45px;
             text-decoration: none;
-            font-size: 30px;
+            font-size: 24px;
             color: white;
             z-index: 1;
         }
@@ -68,7 +68,7 @@ header{
             background-color:#1049bd; /*互い違いに色を変える*/
         }
         ul.nav li a:hover::before{
-            background-color:#8fb0f3; /*ホバーでオレンジ色にする*/
+            background-color:#8fb0f3;
         }
     }
 }
@@ -94,7 +94,7 @@ body{
 
 .section1{
     width: 100%;
-    padding-bottom: 200px;
+    padding-bottom: 120px;
     background-color: #0F026F;
     video{
         margin: 0;
@@ -112,27 +112,25 @@ body{
     
     .message{
         background: rgba(0, 0, 0, 0);
-        width: 1200px;
-        height: 600px;
-        padding-top: 94px;
+        width: 900px;
         margin-top: auto;
         margin-bottom: auto;
-        margin-left: 103px;
+        margin-left: 75px;
         //border-radius: 5%;
         p{
             font-family: 'Noto Serif JP', sans-serif;
             color: white;
-            font-size: 44px;
+            font-size: 32px;
             margin: 0;
-            margin-left: 134px;
+            margin-left: 100px;
         }
         .title{
             font-family: 'Noto Serif JP', sans-serif;
             color: white;
-            font-size: 70px;
+            font-size: 52px;
             margin: 0;
-            margin-left: 100px;
-            margin-bottom: 30px;
+            margin-left: 75px;
+            margin-bottom: 24px;
         }
     }
 }
@@ -147,29 +145,27 @@ body{
     display: flex;
     .message{
         background: rgba(0, 0, 0, 0);
-        width: 1000px;
-        height: 550px;
-        padding-top: 94px;
+        width: 750px;
         margin-top: auto;
         margin-bottom: auto;
-        margin-right: 100px;
+        margin-right: 75px;
         margin-left: auto;
         z-index: 1;
         //border-radius: 5%;
         p{
             font-family: 'Noto Serif JP', sans-serif;
             color: white;
-            font-size: 44px;
+            font-size: 32px;
             margin: 0;
-            margin-left: 141px;
+            margin-left: 105px;
         }
         .title{
             font-family: 'Noto Serif JP', sans-serif;
             color: white;
-            font-size: 80px;
+            font-size: 60px;
             margin: 0;
-            margin-left: 120px;
-            margin-bottom: 25px;
+            margin-left: 90px;
+            margin-bottom: 20px;
         }
     }
 }
@@ -197,114 +193,113 @@ body{
         font-family: 'Noto Serif JP', sans-serif;
         color:white;
         //color: #333333;
-        font-size: 110px;
+        font-size: 84px;
         margin: 0;
-        margin-top: 50px;
-        margin-left: 50px;
+        margin-top: 36px;
+        margin-left: 60px;
     }
     
     .introduction{
         background: rgba(0, 0, 0, 0.4);
-        width: 900px;
-        height: 600px;
-        padding-top: 50px;
+        width: 675px;
+        height: 450px;
+        padding-top: 36px;
         margin-top: auto;
         margin-bottom: auto;
-        margin-right: 132px;
+        margin-right: 100px;
         margin-left: auto;
         text-align: center;
         p{
             font-family: 'Noto Serif JP', sans-serif;
             color:white;
             //color: #333333;
-            font-size: 24px;
-            margin:0;
+            margin: 0;
         }
         .position{
-            font-size: 20px;
+            font-size: 15px;
         }
         .name{
-            font-size: 28px;
+            font-size: 21px;
         }
 
         .memberline1{
             display: flex;
-            width: 900px;
-            height:300px;
+            width: 675px;
+            height: 225px;
         }
         .memberline2{
             display: flex;
-            width: 900px;
-            height:300px;
+            width: 675px;
+            height: 225px;
         }
         .member1{
-            width: 190px;
-            height: 250px;
-            margin-left: 100px;
+            width: 142px;
+            height: 187px;
+            margin-left: 75px;
             margin-right:auto;
             img{
-                width:190px;
-                height:190px;
+                width:142px;
+                height:142px;
                 object-fit: cover;
                 border-radius: 50%;
             }
         }
         .member2{
-            width: 190px;
-            height: 190px;
+            width: 142px;
+            height: 187px;
             margin-left: auto;
             margin-right:auto;
             img{
-                width:190px;
-                height:190px;
+                width:142px;
+                height:142px;
                 object-fit: cover;
                 border-radius: 50%;
             }
         }
         .member3{
-            width: 190px;
-            height: 190px;
+            width: 142px;
+            height: 187px;
             margin-left:auto;
-            margin-right: 100px;
+            margin-right: 75px;
             img{
-                width:190px;
-                height:190px;
+                width:142px;
+                height:142px;
                 object-fit: cover;
                 border-radius: 50%;
             }
         }
         .member4{
-            width: 190px;
-            height: 190px;
-            margin-left: 100px;
+            width: 142px;
+            height: 187px;
+            margin-left: 75px;
             margin-right:auto;
             img{
-                width:190px;
-                height:190px;
+                width:142px;
+                height:142px;
                 object-fit: cover;
                 border-radius: 50%;
             }
         }
         .member5{
-            width: 190px;
-            height: 190px;
+            width: 142px;
+            height: 187px;
             margin-left: auto;
             margin-right:auto;
             img{
-                width:190px;
-                height:190px;
+                width:142px;
+                height:142px;
                 object-fit: cover;
                 border-radius: 50%;
             }
         }
         .member6{
-            width: 190px;
-            height: 190px;
+            width: 142px;
+            height: 187px;
             margin-left:auto;
-            margin-right: 100px;
+            margin-right: 75px;
             img{
-                width:190px;
-                height:190px;
+                width:142px;
+                height:142px;
                 object-fit: cover;
                 border-radius: 50%;
             }
@@ -325,11 +320,11 @@ body{
         margin: 0;
     }
     .title{
-        font-size: 100px;
-        margin-left: 120px;
+        font-size: 75px;
+        margin-left: 90px;
         margin-right: auto;
-        margin-bottom: 100px;
-        margin-top: 50px;
+        margin-bottom: 75px;
+        margin-top: 36px;
     }
     .partner{
         width: 100%;
@@ -337,60 +332,80 @@ body{
     }
     .partner1{
         text-align: center;
-        margin-right: 150px;
+        margin-right: 120px;
         margin-left: auto;
+        img{
+            height: 205px;
+            width: 205px;
+            object-fit: cover;
+        }
     }
     .partner2{
         text-align: center;
-        margin-right: 150px;
+        margin-right: 120px;
+        img{
+            height: 205px;
+            width: 205px;
+            object-fit: cover;
+        }
     }
     .partner3{
         text-align: center;
-        margin-right: 150px;
+        margin-right: 120px;
+        img{
+            height: 205px;
+            width: 205px;
+            object-fit: cover;
+        }
     }
     .partner4{
         text-align: center;
         margin-right: auto;
+        img{
+            height: 205px;
+            width: 205px;
+            object-fit: cover;
+        }
     }
 }
 
 footer{
-    height: 300px;
+    height: 225px;
     margin: 0;
     background-color: #0F026F;
     display: flex;
     .info{
-        margin-top: 20px;
-        margin-left: 180px;
+        margin-top: 15px;
+        margin-left: 135px;
 
         .cInfo{
-            margin-left: 20px;
+            margin-left: 15px;
             p{
                 color: white;
                 font-family: "Hiragino Kaku Gothic ProN";
-                font-size: 20px;
+                font-size: 16px;
                 margin: 0;
-                margin-top: 10px
+                margin-top: 7px
             }
         }
 
         .cName{
             color: white;
             font-family: "Hiragino Kaku Gothic ProN";
-            font-size: 36px;
+            font-size: 27px;
             margin: 0;
             margin-top: 10px
         }
     }
     .mail{
-        margin-right: 300px;
+        margin-right: 225px;
         margin-left: auto;
-        margin-top: 50px;
+        margin-top: 36px;
         .contact{
             margin: 0;
             color: white;
             font-family: "Hiragino Kaku Gothic ProN";
-            font-size: 36px;
+            font-size: 27px;
         }
         .buttons{
             display: flex;
@@ -398,13 +413,13 @@ footer{
                 display: block;
                 color: white;
                 font-family: "Hiragino Kaku Gothic ProN";
-                font-size: 24px;
+                font-size: 18px;
                 margin: 0;
-                margin-top: 10px;
+                margin-top: 7px;
                 text-decoration: none;
             }
             .buttons1{
-                margin-right: 100px;
+                margin-right: 75px;
                 
             }
             .buttons2{

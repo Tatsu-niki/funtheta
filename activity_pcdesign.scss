@@ -1,3 +1,74 @@
+header{
+    z-index: 2;
+    margin: 0;
+    height : 90px;
+    background-color: #FFB4F3;
+    display: flex;
+    .logo{
+        width:150px;
+        height:90px;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        margin: 0;
+        margin-left: 30px;
+        img{
+            margin-left: auto;
+            margin-right: auto;
+            width:90px;
+            height:90px;
+            object-fit: contain;
+        }
+    }
+    .logo::before{
+        width:150px;
+        height:90px;
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        transform: skewX(-30deg);
+        z-index: -1;
+    }
+    .header_nav{
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 35px;
+        ul.nav{
+            list-style: none;
+            display: flex; /*横並びにする*/
+        }
+        ul.nav li{
+            text-align: center;
+        }
+        ul.nav li a{
+            position: relative;
+            padding: 33px 45px;
+            text-decoration: none;
+            font-size: 24px;
+            color: white;
+            z-index: 1;
+        }
+        ul.nav li a::before{
+            content: "";
+            position: absolute;
+            top: 0; bottom: 0; left: 0; right: 0;
+            z-index: -1;
+            background-color:#fa8ee8;
+            transform: skewX(-30deg);
+        }
+        ul.nav li:nth-child(odd) a::before{
+            background-color:#fd55e1; /*互い違いに色を変える*/
+        }
+        ul.nav li a:hover::before{
+            background-color:#ffdef9;
+        }
+    }
+}
 
 body{
     width: 100%;
@@ -8,13 +79,13 @@ body{
     .page_title{
         position: absolute;
         z-index: 1;
-        top: 50px;
-        left: -25px;
-        height: 550px;
+        top: 126px;
+        left: -18px;
+        height: 370px;
         p{
             margin: 0;
             font-family: "Abys";
-            font-size: 500px;
+            font-size: 320px;
             color: #FFB4F3;
             -webkit-text-stroke: 7px #B7A9A9;
         }
@@ -22,15 +93,15 @@ body{
     .triangle1{
         width: 0;
         height: 0;
-        z-index: 0;
+        z-index: -1;
         position: absolute;
         border-style: solid;
-        border-width: 780px 1250px 0 1250px;
+        border-width: 580px 950px 0 950px;
         border-color: transparent;
         border-top-color: #FDFF02;
         left: auto;
-        right: -1250px;
-        top: 0px;
+        right: -950px;
+        top: 90px;
     }
     
     .circle1{
@@ -38,16 +109,16 @@ body{
         justify-content: center;
         align-items: center;
         position: absolute;
-        width: 1200px;
-        height: 1200px;
+        width: 900px;
+        height: 900px;
         background-color: #FDFF02;
         left: auto;
-        right: -650px;
-        top: 1270px;
+        right: -480px;
+        top: 1040px;
         border-radius: 50%;
         .center_circle1{
-            width: 650px;
-            height: 650px;
+            width: 480px;
+            height: 480px;
             background-color: white;
             border-radius: 50%;
         }
@@ -56,9 +127,13 @@ body{
     .activity1{
         width: 2000px;
         position: absolute;
-        left: -670px;
-        top: 1000px;
+        left: -500px;
+        top: 770px;
         display: flex;
+        img{
+            width: 1080px;
+            height: 720px;
+        }
         .sentence{
             margin-left: 70px;
             p{
@@ -75,15 +150,15 @@ body{
     
     .activity2{
         position: absolute;
-        width: 1080px;
-        height: 1350px;
+        width: 810px;
+        height: 1020px;
         background-color: #FFB4F3;
-        top: 1900px;
-        left: 230px;
+        top: 1490px;
+        left: 120px;
         z-index: 0;
         .sentence{
-            margin-left: 200px;
-            margin-top: 300px;
+            margin-left: 110px;
+            margin-top: 150px;
             p{
                 font-family: "Hiragino Kaku Gothic ProN";
                 font-size: 20px;
@@ -105,23 +180,28 @@ body{
     
     .activity3{
         position: absolute;
-        width: 800px;
-        height: 1200px;
-        top: 2800px;
-        right: 50px;
+        width: 700px;
+        height: 700px;
+        top: 2290px;
+        right: 30px;
         display: flex;
         z-index: 1;
     }
     
     .activity4{
         position: absolute;
-        top: 4550px;
-        left: 70px;
+        top: 3290px;
+        left: 40px;
         display: flex;
-        width: 1600px;
+        width: 1400px;
         height: 520px;
+        img{
+            width: 550px;
+            height: 380px; 
+            object-fit: cover;
+        }
         .sentence{
-            margin-left: 70px;
+            margin-left: 90px;
             p{
                 font-family: "abys";
                 font-size: 20px;
@@ -129,7 +209,9 @@ body{
             }
             .title{
                 font-family: "abys";
-                font-size: 70px;
+                font-size: 60px;
+                margin-bottom: 50px;
+                margin-top: 0;
             }
         }
     }
@@ -139,16 +221,17 @@ body{
         justify-content: center;
         align-items: center;
         position: absolute;
-        width: 860px;
-        height: 860px;
+        width: 645px;
+        height: 645px;
         background-color: #FDFF02;
-        left: -400px;
+        left: -300px;
         right: auto;
-        top: 3450px;
+        top: 2790px;
         border-radius: 50%;
+        z-index: -1;
         .center_circle2{
-            width: 440px;
-            height: 440px;
+            width: 330px;
+            height: 330px;
             background-color: white;
             border-radius: 50%;
         }
@@ -159,70 +242,70 @@ body{
         height: 0;
         position: absolute;
         border-style: solid;
-        border-width: 0 1600px 1000px 1600px;
+        border-width: 0 1200px 750px 1200px;
         border-color: transparent;
         border-bottom-color: #FDFF02;
         left: auto;
         right: -1600px;
-        top: 4700px;
+        top: 3390px;
     }
    
 }
 
 footer{
     position: absolute;
-    top: 5700px;
-    height: 300px;
+    top: 4090px;
+    height: 225px;
     width: 100%;
     margin: 0;
     background-color: #FFB4F3;
     display: flex;
     .info{
-        margin-top: 20px;
-        margin-left: 180px;
+        margin-top: 15px;
+        margin-left: 135px;
 
         .cInfo{
-            margin-left: 20px;
+            margin-left: 15px;
             p{
-                color: rgb(28, 27, 27);;
+                color: rgb(26, 25, 25);
                 font-family: "Hiragino Kaku Gothic ProN";
-                font-size: 20px;
+                font-size: 16px;
                 margin: 0;
-                margin-top: 10px
+                margin-top: 7px
             }
         }
 
         .cName{
-            color: rgb(28, 27, 27);;
+            color: rgb(26, 25, 25);
             font-family: "Hiragino Kaku Gothic ProN";
-            font-size: 36px;
+            font-size: 27px;
             margin: 0;
             margin-top: 10px
         }
     }
     .mail{
-        margin-right: 300px;
+        margin-right: 225px;
         margin-left: auto;
-        margin-top: 50px;
+        margin-top: 36px;
         .contact{
             margin: 0;
-            color: rgb(28, 27, 27);
+            color: rgb(26, 25, 25);
             font-family: "Hiragino Kaku Gothic ProN";
-            font-size: 36px;
+            font-size: 27px;
         }
         .buttons{
             display: flex;
             a{
                 display: block;
-                color: rgb(28, 27, 27);
+                color: rgb(26, 25, 25);
                 font-family: "Hiragino Kaku Gothic ProN";
-                font-size: 24px;
+                font-size: 18px;
                 margin: 0;
-                margin-top: 10px;
+                margin-top: 7px;
                 text-decoration: none;
             }
             .buttons1{
-                margin-right: 100px;
+                margin-right: 75px;
                 
             }
             .buttons2{

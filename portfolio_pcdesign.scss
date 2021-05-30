@@ -1,254 +1,339 @@
+header{
+    margin: 0;
+    height : 90px;
+    background-color: rgb(194, 0, 58);
+    display: flex;
+    .logo{
+        width:150px;
+        height:90px;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        margin: 0;
+        margin-left: 30px;
+        img{
+            margin-left: auto;
+            margin-right: auto;
+            width:90px;
+            height:90px;
+            object-fit: contain;
+        }
+    }
+    .logo::before{
+        width:150px;
+        height:90px;
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        transform: skewX(-30deg);
+        z-index: -1;
+    }
+    .header_nav{
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 35px;
+        ul.nav{
+            list-style: none;
+            display: flex; /*横並びにする*/
+        }
+        ul.nav li{
+            text-align: center;
+        }
+        ul.nav li a{
+            position: relative;
+            padding: 33px 45px;
+            text-decoration: none;
+            font-size: 24px;
+            color: white;
+            z-index: 1;
+        }
+        ul.nav li a::before{
+            content: "";
+            position: absolute;
+            top: 0; bottom: 0; left: 0; right: 0;
+            z-index: -1;
+            background-color:rgb(243, 65, 52);
+            transform: skewX(-30deg);
+        }
+        ul.nav li:nth-child(odd) a::before{
+            background-color:rgb(238, 25, 10); /*互い違いに色を変える*/
+        }
+        ul.nav li a:hover::before{
+            background-color:rgb(247, 122, 114);
+        }
+    }
+}
+
 body{
     background-image: url("image/flowers.png");
+    margin: 0;
     
     .page_title{
         text-align: center;
         margin-left:auto;
         margin-right:auto;
-        margin-bottom: 80px;
-        font-size: 200px;
+        margin-bottom: 60px;
+        font-size: 150px;
     }
 
     .work_title{
                 font-family: "Hiragino Kaku Gothic ProN";
-                font-size: 100px;
+                font-size: 75px;
                 margin-bottom: 0;
             }
     .content1{
         display: flex;
-        height: 800px;
+        height: 600px;
         .work{
             margin-top: auto;
             margin-bottom: auto;
             margin-left: auto;
-            margin-right: 100px;
-            width: 650px;
-            height: 450px;
+            margin-right: 75px;
+            width: 480px;
+            height: 340px;
             p.work_title{
                 font-family: "Hiragino Kaku Gothic ProN";
-                font-size: 100px;
+                font-size: 75px;
                 margin-bottom: 0;
             }
             .line{
-                width: 650px;
-                height: 20px;
+                width: 480px;
+                height: 15px;
                 position: relative;
                 border: 0;
-                border-bottom: 40px;
+                border-bottom: 30px;
                 border-style: solid;
                 border-image: linear-gradient(to right, rgba(226, 255, 0, 0.7) 0%, rgba(255, 0, 0, 0.7) 100%);
                 border-image-slice: 1;
-                top: -70px;
-                left: 30px;
+                top: -52px;
+                left: 24px;
             }
             p.work_day{
                 font-family: "Hiragino Kaku Gothic ProN";
-                font-size: 50px;
+                font-size: 36px;
                 margin-right: 0;
                 margin-top: 0;
                 margin-bottom: 0;
-                margin-left: 200px;
+                margin-left: 150px;
                 position: relative;
-                top: -70px;
+                top: -52px;
             }
         }
         img{
+            width: 480px;
+            height: 320px;
+            object-fit: cover;
             margin-top: auto;
             margin-bottom: auto;
-            margin-left: 100px;
+            margin-left: 75px;
             margin-right: auto;
         } 
     }
     .content2{
         display: flex;
-        height: 800px;
+        height: 600px;
         .work{
             margin-top: auto;
             margin-bottom: auto;
-            margin-left: 100px;
+            margin-left: 75px;
             margin-right: auto;
-            width: 650px;
-            height: 450px;
+            width: 480px;
+            height: 340px;
             p.work_title{
                 font-family: "Hiragino Kaku Gothic ProN";
-                font-size: 100px;
+                font-size: 75px;
                 margin-bottom: 0;
             }
             .line{
-                width: 650px;
-                height: 20px;
+                width: 480px;
+                height: 15px;
                 position: relative;
                 border: 0;
-                border-bottom: 40px;
+                border-bottom: 30px;
                 border-style: solid;
                 border-image: linear-gradient(to right, rgba(226, 255, 0, 0.7) 0%, rgba(255, 0, 0, 0.7) 100%);
                 border-image-slice: 1;
-                top: -70px;
-                left: 30px;
+                top: -52px;
+                left: 24px;
             }
             p.work_day{
                 font-family: "Hiragino Kaku Gothic ProN";
-                font-size: 50px;
+                font-size: 36px;
                 margin-right: 0;
                 margin-top: 0;
                 margin-bottom: 0;
-                margin-left: 200px;
+                margin-left: 150px;
                 position: relative;
-                top: -70px;
+                top: -52px;
             }
         }
         img{
+            width: 480px;
+            height: 320px;
+            object-fit: cover;
             margin-top: auto;
             margin-bottom: auto;
             margin-left: auto;
-            margin-right: 100px;
+            margin-right: 75px;
         } 
     }
     .content3{
         display: flex;
-        height: 800px;
+        height: 600px;
         .work{
             margin-top: auto;
             margin-bottom: auto;
             margin-left: auto;
-            margin-right: 100px;
-            width: 650px;
-            height: 450px;
+            margin-right: 75px;
+            width: 480px;
+            height: 340px;
             p.work_title{
                 font-family: "Hiragino Kaku Gothic ProN";
-                font-size: 100px;
+                font-size: 75px;
                 margin-bottom: 0;
             }
             .line{
-                width: 650px;
-                height: 20px;
+                width: 480px;
+                height: 15px;
                 position: relative;
                 border: 0;
-                border-bottom: 40px;
+                border-bottom: 30px;
                 border-style: solid;
                 border-image: linear-gradient(to right, rgba(226, 255, 0, 0.7) 0%, rgba(255, 0, 0, 0.7) 100%);
                 border-image-slice: 1;
-                top: -70px;
-                left: 30px;
+                top: -52px;
+                left: 24px;
             }
             p.work_day{
                 font-family: "Hiragino Kaku Gothic ProN";
-                font-size: 50px;
+                font-size: 36px;
                 margin-right: 0;
                 margin-top: 0;
                 margin-bottom: 0;
-                margin-left: 200px;
+                margin-left: 150px;
                 position: relative;
-                top: -70px;
+                top: -52px;
             }
         }
         img{
+            width: 480px;
+            height: 320px;
+            object-fit: cover;
             margin-top: auto;
             margin-bottom: auto;
-            margin-left: 100px;
+            margin-left: 75px;
             margin-right: auto;
         } 
     }
     .content4{
         display: flex;
-        height: 800px;
+        height: 600px;
+        margin-bottom: 200px;
         .work{
             margin-top: auto;
             margin-bottom: auto;
-            margin-left: 100px;
+            margin-left: 75px;
             margin-right: auto;
-            width: 650px;
-            height: 450px;
+            width: 480px;
+            height: 340px;
             p.work_title{
                 font-family: "Hiragino Kaku Gothic ProN";
-                font-size: 100px;
+                font-size: 75px;
                 margin-bottom: 0;
             }
             .line{
-                width: 650px;
-                height: 20px;
+                width: 480px;
+                height: 15px;
                 position: relative;
                 border: 0;
-                border-bottom: 40px;
+                border-bottom: 30px;
                 border-style: solid;
                 border-image: linear-gradient(to right, rgba(226, 255, 0, 0.7) 0%, rgba(255, 0, 0, 0.7) 100%);
                 border-image-slice: 1;
-                top: -70px;
-                left: 30px;
+                top: -52px;
+                left: 24px;
             }
             p.work_day{
                 font-family: "Hiragino Kaku Gothic ProN";
-                font-size: 50px;
+                font-size: 36px;
                 margin-right: 0;
                 margin-top: 0;
                 margin-bottom: 0;
-                margin-left: 200px;
+                margin-left: 150px;
                 position: relative;
-                top: -70px;
+                top: -52px;
             }
         }
         img{
+            width: 480px;
+            height: 320px;
+            object-fit: cover;
             margin-top: auto;
             margin-bottom: auto;
             margin-left: auto;
-            margin-right: 100px;
+            margin-right: 75px;
         } 
     }
 }
 
 
 footer{
-    height: 300px;
+    height: 225px;
     width: 100%;
     margin: 0;
-    background-color: white;
+    background-color: rgb(194, 0, 58);
     display: flex;
     .info{
-        margin-top: 20px;
-        margin-left: 180px;
+        margin-top: 15px;
+        margin-left: 135px;
 
         .cInfo{
-            margin-left: 20px;
+            margin-left: 15px;
             p{
-                color: rgb(28, 27, 27);;
+                color: white;
                 font-family: "Hiragino Kaku Gothic ProN";
-                font-size: 20px;
+                font-size: 16px;
                 margin: 0;
-                margin-top: 10px
+                margin-top: 7px
             }
         }
 
         .cName{
-            color: rgb(28, 27, 27);;
+            color: white;
             font-family: "Hiragino Kaku Gothic ProN";
-            font-size: 36px;
+            font-size: 27px;
             margin: 0;
             margin-top: 10px
         }
     }
     .mail{
-        margin-right: 300px;
+        margin-right: 225px;
         margin-left: auto;
-        margin-top: 50px;
+        margin-top: 36px;
         .contact{
             margin: 0;
-            color: rgb(28, 27, 27);
+            color: white;
             font-family: "Hiragino Kaku Gothic ProN";
-            font-size: 36px;
+            font-size: 27px;
         }
         .buttons{
             display: flex;
             a{
                 display: block;
-                color: rgb(28, 27, 27);
+                color: white;
                 font-family: "Hiragino Kaku Gothic ProN";
-                font-size: 24px;
+                font-size: 18px;
                 margin: 0;
-                margin-top: 10px;
+                margin-top: 7px;
                 text-decoration: none;
             }
             .buttons1{
-                margin-right: 100px;
+                margin-right: 75px;
                 
             }
             .buttons2{
