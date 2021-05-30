@@ -7,16 +7,68 @@ header{
     height : 120px;
     background-color: #0F026F;
     display: flex;
+    .logo{
+        width:200px;
+        height:120px;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        margin: 0;
+        margin-left: 40px;
+        img{
+            margin-left: auto;
+            margin-right: auto;
+            width:120px;
+            height:120px;
+            object-fit: contain;
+        }
+    }
+    .logo::before{
+        width:200px;
+        height:120px;
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        transform: skewX(-30deg);
+        z-index: -1;
+    }
     .header_nav{
-        margin-right: 20px;
+        margin-right: auto;
         margin-top: auto;
         margin-bottom: auto;
-        margin-left: auto;
-        a{
+        margin-left: 50px;
+        ul.nav{
+            list-style: none;
+            display: flex; /*横並びにする*/
+        }
+        ul.nav li{
+            text-align: center;
+        }
+        ul.nav li a{
+            position: relative;
+            padding: 45px 60px;
             text-decoration: none;
-            color: white;
             font-size: 30px;
-            margin-right: 20px;
+            color: white;
+            z-index: 1;
+        }
+        ul.nav li a::before{
+            content: "";
+            position: absolute;
+            top: 0; bottom: 0; left: 0; right: 0;
+            z-index: -1;
+            background-color:#082694;
+            transform: skewX(-30deg);
+        }
+        ul.nav li:nth-child(odd) a::before{
+            background-color:#1049bd; /*互い違いに色を変える*/
+        }
+        ul.nav li a:hover::before{
+            background-color:#8fb0f3; /*ホバーでオレンジ色にする*/
         }
     }
 }
@@ -28,7 +80,6 @@ html{
 body{
     margin: 0;
     height: 100%;
-    overflow: hidden;
 }
 
 .cd-fixed-bg {
@@ -309,9 +360,21 @@ footer{
     background-color: #0F026F;
     display: flex;
     .info{
-        margin-top: 40px;
-        margin-left: 60px;
-        p{
+        margin-top: 20px;
+        margin-left: 180px;
+
+        .cInfo{
+            margin-left: 20px;
+            p{
+                color: white;
+                font-family: "Hiragino Kaku Gothic ProN";
+                font-size: 20px;
+                margin: 0;
+                margin-top: 10px
+            }
+        }
+
+        .cName{
             color: white;
             font-family: "Hiragino Kaku Gothic ProN";
             font-size: 36px;
@@ -319,12 +382,33 @@ footer{
             margin-top: 10px
         }
     }
-    .contact{
-        margin-right: 280px;
+    .mail{
+        margin-right: 300px;
         margin-left: auto;
-        margin-top: 120px;
-        color: white;
-        font-family: "Hiragino Kaku Gothic ProN";
-        font-size: 45px;
+        margin-top: 50px;
+        .contact{
+            margin: 0;
+            color: white;
+            font-family: "Hiragino Kaku Gothic ProN";
+            font-size: 36px;
+        }
+        .buttons{
+            display: flex;
+            a{
+                display: block;
+                color: white;
+                font-family: "Hiragino Kaku Gothic ProN";
+                font-size: 24px;
+                margin: 0;
+                margin-top: 10px;
+                text-decoration: none;
+            }
+            .buttons1{
+                margin-right: 100px;
+                
+            }
+            .buttons2{
+            }
+        }
     }
 }

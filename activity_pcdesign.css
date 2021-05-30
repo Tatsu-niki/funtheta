@@ -145,18 +145,42 @@ footer {
   background-color: #FFB4F3;
   display: flex; }
   footer .info {
-    margin-top: 40px;
-    margin-left: 60px; }
-    footer .info p {
+    margin-top: 20px;
+    margin-left: 180px; }
+    footer .info .cInfo {
+      margin-left: 20px; }
+      footer .info .cInfo p {
+        color: #1c1b1b;
+        font-family: "Hiragino Kaku Gothic ProN";
+        font-size: 20px;
+        margin: 0;
+        margin-top: 10px; }
+    footer .info .cName {
+      color: #1c1b1b;
       font-family: "Hiragino Kaku Gothic ProN";
       font-size: 36px;
       margin: 0;
       margin-top: 10px; }
-  footer .contact {
-    margin-right: 280px;
+  footer .mail {
+    margin-right: 300px;
     margin-left: auto;
-    margin-top: 120px;
-    font-family: "Hiragino Kaku Gothic ProN";
-    font-size: 45px; }
+    margin-top: 50px; }
+    footer .mail .contact {
+      margin: 0;
+      color: #1c1b1b;
+      font-family: "Hiragino Kaku Gothic ProN";
+      font-size: 36px; }
+    footer .mail .buttons {
+      display: flex; }
+      footer .mail .buttons a {
+        display: block;
+        color: #1c1b1b;
+        font-family: "Hiragino Kaku Gothic ProN";
+        font-size: 24px;
+        margin: 0;
+        margin-top: 10px;
+        text-decoration: none; }
+      footer .mail .buttons .buttons1 {
+        margin-right: 100px; }
 
 /*# sourceMappingURL=activity_pcdesign.css.map */
