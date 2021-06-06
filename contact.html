@@ -1,0 +1,81 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/x-icon" href="image/logo.jpg">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contact_pcdesign.css">
+    <title>Funtheta</title>
+</head>
+
+<header>
+    <div class="logo">
+        <img src="image/logo.jpg">
+    </div>
+    <div class="header_nav">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="activity.html">Activity</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            </ul>
+    </div>
+</header>
+
+<body>
+<form id="contact" action="thanks.php"　method="post">
+    <div class="container">
+      <div class="head">
+        <h2>お問い合わせ</h2>
+      </div>
+      <p class="first">お名前</p>
+      <input type="text" name="name" placeholder="Name" /><br />
+      <p>会社・組織名</p>
+      <input type="text" name="company" placeholder="Company" /><br />
+      <p>メールアドレス</p>
+      <input  type="email" name="email" placeholder="Email" /><br />
+      <p>ご依頼内容(選択)</p>
+      <select name="contents">
+        <option value="サンプル1">ホームページ制作</option>
+        <option value="サンプル2">動画制作</option>
+        <option value="サンプル3">名刺制作</option>
+      </select><br />
+      <p>詳細</p>
+      <textarea type="text" name="message" placeholder="Message"></textarea><br />
+      <div class="message">Message Sent</div>
+      <button id="submit" type="submit">
+        送信
+      </button>
+    </div>
+  </form>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+// When the browser is ready...
+$(function() {
+    // validate
+    $("#contact").validate({
+        // Set the validation rules
+        rules: {
+            name: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            message: "required",
+        },
+        // Specify the validation error messages
+        messages: {
+            name: "名前を入力してください",
+            email: "正しいメールアドレスを入力してください",
+            message: "詳細を入力してください",
+        },
+        // submit handler
+        submitHandler: function(form) {
+          //form.submit();
+           $(".message").show();
+           $(".message").fadeOut(4500);
+        }
+    });
+  });
+
+  </script>
+</body>

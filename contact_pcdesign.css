@@ -1,0 +1,203 @@
+@charset "UTF-8";
+header {
+  z-index: 2;
+  margin: 0;
+  height: 90px;
+  background-color: #2ABCA7;
+  display: flex; }
+  header .logo {
+    width: 150px;
+    height: 90px;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin: 0;
+    margin-left: 30px; }
+    header .logo img {
+      margin-left: auto;
+      margin-right: auto;
+      width: 90px;
+      height: 90px;
+      object-fit: contain; }
+  header .logo::before {
+    width: 150px;
+    height: 90px;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    transform: skewX(-30deg);
+    z-index: -1; }
+  header .header_nav {
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 35px; }
+    header .header_nav ul.nav {
+      list-style: none;
+      display: flex;
+      /*横並びにする*/ }
+    header .header_nav ul.nav li {
+      text-align: center; }
+    header .header_nav ul.nav li a {
+      position: relative;
+      padding: 33px 45px;
+      text-decoration: none;
+      font-size: 24px;
+      color: white;
+      z-index: 1; }
+    header .header_nav ul.nav li a::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: -1;
+      background-color: #0bccb9;
+      transform: skewX(-30deg); }
+    header .header_nav ul.nav li:nth-child(odd) a::before {
+      background-color: #5fdad4;
+      /*互い違いに色を変える*/ }
+    header .header_nav ul.nav li a:hover::before {
+      background-color: #9bfde3; }
+
+body {
+  background-color: #919191;
+  margin: 0; }
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  background-color: #FAFAFA; }
+
+p {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 70px;
+  text-align: left; }
+
+.head {
+  -webkit-border-radius: 6px 6px 0px 0px;
+  -moz-border-radius: 6px 6px 0px 0px;
+  border-radius: 6px 6px 0px 0px;
+  background-color: #2ABCA7;
+  color: #FAFAFA; }
+
+h2 {
+  text-align: center;
+  padding: 18px 0 18px 0;
+  font-size: 1.4em; }
+
+input {
+  margin-bottom: 10px; }
+
+select {
+  margin-bottom: 10px; }
+
+textarea {
+  height: 200px;
+  margin-bottom: 10px; }
+
+.first {
+  margin-top: 35px; }
+
+input, textarea, select {
+  font-size: 1em;
+  padding: 15px 10px 10px;
+  font-family: 'Source Sans Pro',arial,sans-serif;
+  border: 1px solid #cecece;
+  background: #dddddd;
+  color: #4d4d4d;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 80%;
+  max-width: 600px; }
+
+::-webkit-input-placeholder {
+  color: #FAFAFA; }
+
+:-moz-placeholder {
+  color: #FAFAFA; }
+
+::-moz-placeholder {
+  color: #FAFAFA; }
+
+:-ms-input-placeholder {
+  color: #FAFAFA; }
+
+button {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  background-color: #2ABCA7;
+  padding: 12px 45px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #2ABCA7;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: inline-block;
+  cursor: pointer;
+  width: 30%;
+  color: #fff; }
+
+button:hover, .button:hover {
+  background: #19a08c; }
+
+label.error {
+  font-family: 'Source Sans Pro',arial,sans-serif;
+  font-size: 1em;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #d89c9c;
+  width: 80%;
+  margin: auto;
+  color: #FAFAFA;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px; }
+
+/* media queries */
+@media (max-width: 700px) {
+  label.error {
+    width: 90%; }
+
+  input, textarea {
+    width: 90%; }
+
+  button {
+    width: 90%; }
+
+  body {
+    padding-top: 10px; } }
+.message {
+  font-family: 'Source Sans Pro',arial,sans-serif;
+  font-size: 1.1em;
+  display: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #2ABCA7;
+  width: 80%;
+  margin: auto;
+  color: #FAFAFA;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px; }
+
+/*# sourceMappingURL=contact_pcdesign.css.map */
