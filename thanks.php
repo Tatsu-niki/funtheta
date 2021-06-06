@@ -3,6 +3,7 @@ $action = $_POST['action'];
 $name = htmlspecialchars($_POST['name'],ENT_QUOTES);
 $company = htmlspecialchars($_POST['company'],ENT_QUOTES);
 $email = htmlspecialchars($_POST['email'],ENT_QUOTES);
+$tel = htmlspecialchars($_POST['email'],ENT_QUOTES);
 $contents = htmlspecialchars($_POST['contents'],ENT_QUOTES);
 $message = htmlspecialchars($_POST['message'],ENT_QUOTES);
  
@@ -15,6 +16,9 @@ if ($email == '') {
 }
 if ($company == '') {
     $error = $error.'<p>会社・組織名が入力されていません。</p>';
+}
+if ($tel == '') {
+    $error = $error.'<p>電話番号が入力されていません。</p>';
 }
 if ($contents == '') {
     $error = $error.'<p>ご依頼内容が入力されていません。</p>';
@@ -36,6 +40,8 @@ if ($error != '') {
     $mail .= $company."\n\n";
     $mail .= "【メールアドレス】\n";
     $mail .= $email."\n\n";
+    $mail .= "【電話番号】\n";
+    $mail .= $tel."\n\n";
     $mail .= "【ご依頼内容】\n";
     $mail .= $contents."\n\n";
     $mail .= "【詳細】\n";

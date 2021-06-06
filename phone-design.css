@@ -1,0 +1,252 @@
+@charset "UTF-8";
+html {
+  scroll-behavior: smooth;
+  height: 100%; }
+
+body {
+  height: 100%;
+  margin: 0; }
+  body header {
+    background-color: #0F026F;
+    margin: 0;
+    height: 60px;
+    display: flex; }
+    body header .container {
+      width: 100%;
+      height: 60px;
+      display: flex; }
+    body header .header_nav {
+      display: none; }
+    body header .logo {
+      height: 60px;
+      width: 60px;
+      margin-left: 30px; }
+      body header .logo img {
+        height: 60px;
+        width: 60px; }
+    body header a {
+      text-decoration: none;
+      color: white; }
+    body header .menu {
+      padding: 0;
+      margin-right: 20px;
+      margin-left: auto;
+      margin-top: auto;
+      margin-bottom: auto; }
+      body header .menu #input {
+        display: none; }
+    body header .line {
+      background-color: white;
+      width: 20px;
+      height: 3px;
+      display: block;
+      cursor: pointer;
+      margin: 4px;
+      margin-left: 0;
+      margin-right: 0;
+      border-radius: 1.5px; }
+    body header #content {
+      border-style: solid;
+      border-width: 3px;
+      border-color: #0F026F;
+      background-color: #0F026F;
+      position: absolute;
+      display: Block;
+      margin: 0;
+      z-index: 100;
+      width: 100%;
+      height: 812px;
+      transform: translate(-100%, -1000px) translateX(40px); }
+    body header #input:checked ~ #content {
+      transform: translate(-100%, -43px) translateX(40px);
+      transition-duration: 0.5s; }
+    body header #batsu {
+      color: white;
+      padding: 0;
+      font-size: 30px;
+      margin-top: 5px;
+      margin-left: 85%; }
+    body header .nav {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      text-align: center; }
+      body header .nav li {
+        color: white;
+        text-decoration: none;
+        font-family: "遊ゴシック", "Yu Gothic", "遊ゴシック体", "YuGothic";
+        font-size: 26px;
+        font-weight: Bold;
+        margin-top: 120px;
+        margin-left: auto;
+        margin-right: auto; }
+  body .cd-fixed-bg {
+    position: relative;
+    min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2; }
+  body .section1 {
+    width: 100%;
+    padding-bottom: 80px;
+    background-color: #0F026F; }
+    body .section1 video {
+      margin: 0;
+      width: 100%; }
+  body .section2 {
+    background-image: url(image/pexels-photo1.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex; }
+    body .section2 .message {
+      background: rgba(0, 0, 0, 0);
+      width: 100%;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 10px; }
+      body .section2 .message p {
+        font-family: 'Noto Serif JP', sans-serif;
+        color: white;
+        font-size: 14px;
+        margin: 0;
+        margin-left: 14px; }
+      body .section2 .message .title {
+        font-family: 'Noto Serif JP', sans-serif;
+        color: white;
+        font-size: 20px;
+        margin: 0;
+        margin-left: 20px;
+        margin-bottom: 10px; }
+  body .section3 {
+    background-image: url(image/pexels-photo2.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex; }
+    body .section3 .message {
+      background: rgba(0, 0, 0, 0);
+      width: 100%;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 10px;
+      z-index: 1; }
+      body .section3 .message p {
+        font-family: 'Noto Serif JP', sans-serif;
+        color: white;
+        font-size: 14px;
+        margin: 0;
+        margin-left: 14px; }
+      body .section3 .message .title {
+        font-family: 'Noto Serif JP', sans-serif;
+        color: white;
+        font-size: 20px;
+        margin: 0;
+        margin-left: 20px;
+        margin-bottom: 14px; }
+  body .section4 {
+    background-image: url(image/pexels-photo4.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: block; }
+    body .section4 p {
+      font-family: 'Noto Serif JP', sans-serif;
+      color: white;
+      font-size: 24px;
+      margin: 0;
+      margin-top: 20px;
+      margin-left: 20px; }
+    body .section4 .introduction {
+      background: rgba(0, 0, 0, 0.4);
+      width: 90%;
+      height: 450px;
+      padding-top: 36px;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center; }
+      body .section4 .introduction p {
+        font-family: 'Noto Serif JP', sans-serif;
+        color: white;
+        margin: 0; }
+      body .section4 .introduction .position {
+        font-size: 12px; }
+      body .section4 .introduction .name {
+        font-size: 16px; }
+      body .section4 .introduction .memberline1 {
+        display: flex;
+        width: 300px;
+        height: 200px; }
+      body .section4 .introduction .memberline2 {
+        display: flex;
+        width: 300px;
+        height: 200px; }
+      body .section4 .introduction .member1 {
+        width: 80px;
+        height: 200px;
+        margin-left: 10px;
+        margin-right: auto; }
+        body .section4 .introduction .member1 img {
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+          border-radius: 50%; }
+      body .section4 .introduction .member2 {
+        width: 80px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto; }
+        body .section4 .introduction .member2 img {
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+          border-radius: 50%; }
+      body .section4 .introduction .member3 {
+        width: 80px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: 10px; }
+        body .section4 .introduction .member3 img {
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+          border-radius: 50%; }
+      body .section4 .introduction .member4 {
+        width: 80px;
+        height: 200px;
+        margin-left: 10px;
+        margin-right: auto; }
+        body .section4 .introduction .member4 img {
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+          border-radius: 50%; }
+      body .section4 .introduction .member5 {
+        width: 80px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto; }
+        body .section4 .introduction .member5 img {
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+          border-radius: 50%; }
+      body .section4 .introduction .member6 {
+        width: 80px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: 10px; }
+        body .section4 .introduction .member6 img {
+          width: 80px;
+          height: 80px;
+          object-fit: cover;
+          border-radius: 50%; }
+
+/*# sourceMappingURL=phone-design.css.map */

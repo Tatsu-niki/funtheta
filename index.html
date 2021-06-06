@@ -5,21 +5,43 @@
   <meta name="viewport" content="width=device-width">
   <link rel="icon" type="image/x-icon" href="image/logo.jpg">
   <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="pc-design.css" media="screen and (min-width: 900px)">
-  <link rel="stylesheet" href="smartstyle.css" media="screen and (max-width: 899px)">
+  <link rel="stylesheet" href="pc-design.css" media="screen and (min-width: 1000px)">
+  <link rel="stylesheet" href="phone-design.css" media="screen and (max-width: 999px)">
   <title>Funtheta</title>
 </head>
 <header>
-    <div class="logo">
-        <img src="image/logo.jpg">
-    </div>
-    <div class="header_nav">
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="activity.html">Activity</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <div class="container">
+        <div class="logo">
+            <img src="image/logo.jpg">
+        </div>
+        <div class="header_nav">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="activity.html">Activity</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
+        </div>
+
+        <div class="menu">
+            <input type="checkbox" id="input">
+            <label for="input">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+            <div id="content">
+            <label for="input">
+                <div id="batsu"><a>×</a></div>
+            </label>
+            <ul class="nav">
+                <li class="nav-list-item"><label for="batsu"><a href="index.html">Home</a></label></li>
+                <li class="nav-list-item"><label for="batsu"><a href="activity.html">Activity</a></label></li>
+                <li class="nav-list-item"><label for="batsu"><a href="portfolio.html">Portfolio</a></label></li>
+                <li class="nav-list-item"><label for="batsu"><a href="contact.html">Contact</a></label></li>
+            </ul>
+            </div>
+        </div>
     </div>
 </header>
 <body>
