@@ -1,9 +1,17 @@
+html{
+    scroll-behavior: smooth;
+}
+
 header{
-    z-index: 2;
     margin: 0;
     height : 90px;
     background-color: #FFB4F3;
     display: flex;
+    .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
     .logo{
         width:150px;
         height:90px;
@@ -67,6 +75,9 @@ header{
         ul.nav li a:hover::before{
             background-color:#ffdef9;
         }
+    }
+    .menu{
+        display:none;
     }
 }
 
