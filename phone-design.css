@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap);
 html {
   scroll-behavior: smooth;
   height: 100%; }
@@ -77,7 +79,7 @@ body {
         font-family: "遊ゴシック", "Yu Gothic", "遊ゴシック体", "YuGothic";
         font-size: 26px;
         font-weight: Bold;
-        margin-top: 120px;
+        margin-top: 80px;
         margin-left: auto;
         margin-right: auto; }
   body .cd-fixed-bg {
@@ -160,17 +162,24 @@ body {
       color: white;
       font-size: 24px;
       margin: 0;
-      margin-top: 20px;
       margin-left: 20px; }
+    body .section4 .title {
+      height: 60px; }
+      body .section4 .title p {
+        padding-top: 20px;
+        margin-right: auto; }
     body .section4 .introduction {
       background: rgba(0, 0, 0, 0.4);
       width: 90%;
       height: 450px;
       padding-top: 36px;
-      margin-top: auto;
-      margin-bottom: auto;
-      margin-right: auto;
-      margin-left: auto;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 90%;
       text-align: center; }
       body .section4 .introduction p {
         font-family: 'Noto Serif JP', sans-serif;
@@ -182,16 +191,18 @@ body {
         font-size: 16px; }
       body .section4 .introduction .memberline1 {
         display: flex;
-        width: 300px;
-        height: 200px; }
+        width: 100%;
+        height: 200px;
+        margin: 0; }
       body .section4 .introduction .memberline2 {
         display: flex;
-        width: 300px;
-        height: 200px; }
+        width: 100%;
+        height: 200px;
+        margin: 0; }
       body .section4 .introduction .member1 {
         width: 80px;
         height: 200px;
-        margin-left: 10px;
+        margin-left: 20px;
         margin-right: auto; }
         body .section4 .introduction .member1 img {
           width: 80px;
@@ -200,9 +211,7 @@ body {
           border-radius: 50%; }
       body .section4 .introduction .member2 {
         width: 80px;
-        height: 200px;
-        margin-left: auto;
-        margin-right: auto; }
+        height: 200px; }
         body .section4 .introduction .member2 img {
           width: 80px;
           height: 80px;
@@ -212,7 +221,7 @@ body {
         width: 80px;
         height: 200px;
         margin-left: auto;
-        margin-right: 10px; }
+        margin-right: 20px; }
         body .section4 .introduction .member3 img {
           width: 80px;
           height: 80px;
@@ -221,7 +230,7 @@ body {
       body .section4 .introduction .member4 {
         width: 80px;
         height: 200px;
-        margin-left: 10px;
+        margin-left: 20px;
         margin-right: auto; }
         body .section4 .introduction .member4 img {
           width: 80px;
@@ -242,11 +251,88 @@ body {
         width: 80px;
         height: 200px;
         margin-left: auto;
-        margin-right: 10px; }
+        margin-right: 20px; }
         body .section4 .introduction .member6 img {
           width: 80px;
           height: 80px;
           object-fit: cover;
           border-radius: 50%; }
+  body .section5 {
+    background-image: url(image/pexels-photo5.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: block; }
+    body .section5 p {
+      font-family: 'Noto Serif JP', sans-serif;
+      color: white;
+      margin: 0; }
+    body .section5 .title {
+      font-size: 24px;
+      padding-top: 20px;
+      margin-right: auto;
+      margin-left: 20px; }
+    body .section5 .partner {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: 500px; }
+      body .section5 .partner .partner1 {
+        width: 160px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto; }
+        body .section5 .partner .partner1 img {
+          width: 160px; }
+      body .section5 .partner .partner2 {
+        width: 160px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto; }
+        body .section5 .partner .partner2 img {
+          width: 160px; }
+      body .section5 .partner .partner3 {
+        width: 160px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto; }
+        body .section5 .partner .partner3 img {
+          width: 160px; }
+      body .section5 .partner .partner4 {
+        width: 160px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto; }
+        body .section5 .partner .partner4 img {
+          width: 160px; }
+  body footer {
+    margin: 0;
+    background-color: #0F026F; }
+    body footer .cName {
+      margin: 0;
+      margin-left: 15px;
+      padding-top: 15px;
+      color: white;
+      font-family: "Hiragino Kaku Gothic ProN";
+      font-size: 16px; }
+    body footer .cInfo {
+      padding-bottom: 15px;
+      margin-left: 20px; }
+      body footer .cInfo p {
+        margin: 0;
+        padding-top: 5px;
+        color: white;
+        font-family: "Hiragino Kaku Gothic ProN";
+        font-size: 12px; }
+    body footer .mail {
+      display: none; }
 
 /*# sourceMappingURL=phone-design.css.map */

@@ -1,3 +1,7 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap);
+
 html{
     scroll-behavior: smooth;
     height: 100%;
@@ -91,7 +95,7 @@ body{
                 font-family: "遊ゴシック", "Yu Gothic", "遊ゴシック体", "YuGothic";
                 font-size: 26px;
                 font-weight: Bold;
-                margin-top: 120px;
+                margin-top: 80px;
                 margin-left: auto;
                 margin-right: auto;
             }
@@ -191,9 +195,15 @@ body{
             color:white;
             //color: #333333;
             font-size: 24px;
-            margin: 0;
-            margin-top: 20px;
+            margin:0;
             margin-left: 20px;
+        }
+        .title{
+            height: 60px;
+            p{
+                padding-top: 20px;
+                margin-right: auto;
+            }
         }
         
         .introduction{
@@ -201,10 +211,13 @@ body{
             width: 90%;
             height: 450px;
             padding-top: 36px;
-            margin-top: auto;
-            margin-bottom: auto;
-            margin-right: auto;
-            margin-left: auto;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            width: 90%;
             text-align: center;
             p{
                 font-family: 'Noto Serif JP', sans-serif;
@@ -221,18 +234,20 @@ body{
     
             .memberline1{
                 display: flex;
-                width: 300px;
+                width: 100%;
                 height: 200px;
+                margin:0;
             }
             .memberline2{
                 display: flex;
-                width: 300px;
+                width: 100%;
                 height: 200px;
+                margin:0;
             }
             .member1{
                 width: 80px;
                 height: 200px;
-                margin-left: 10px;
+                margin-left: 20px;
                 margin-right:auto;
                 img{
                     width:80px;
@@ -244,8 +259,6 @@ body{
             .member2{
                 width: 80px;
                 height: 200px;
-                margin-left: auto;
-                margin-right:auto;
                 img{
                     width:80px;
                     height:80px;
@@ -257,7 +270,7 @@ body{
                 width: 80px;
                 height: 200px;
                 margin-left:auto;
-                margin-right: 10px;
+                margin-right: 20px;
                 img{
                     width:80px;
                     height:80px;
@@ -268,7 +281,7 @@ body{
             .member4{
                 width: 80px;
                 height: 200px;
-                margin-left: 10px;
+                margin-left: 20px;
                 margin-right:auto;
                 img{
                     width:80px;
@@ -293,7 +306,7 @@ body{
                 width: 80px;
                 height: 200px;
                 margin-left:auto;
-                margin-right: 10px;
+                margin-right: 20px;
                 img{
                     width:80px;
                     height:80px;
@@ -301,6 +314,102 @@ body{
                     border-radius: 50%;
                 }
             }
+        }
+    }
+    .section5{
+        background-image: url(image/pexels-photo5.jpg);
+        background-position: center center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        display: block;
+
+        p{
+            font-family: 'Noto Serif JP', sans-serif;
+            color:white;
+            //color: #333333;
+            margin:0;
+        }
+        .title{
+            font-size: 24px;
+            padding-top: 20px;
+            margin-right: auto;
+            margin-left: 20px;
+        }
+        .partner{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 500px;
+            .partner1{
+                width: 160px;
+                height: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                img{
+                    width: 160px;
+                }
+            }
+            .partner2{
+                width: 160px;
+                height: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                img{
+                    width: 160px;
+                }
+            }
+            .partner3{
+                width: 160px;
+                height: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                img{
+                    width: 160px;
+                }
+            }
+            .partner4{
+                width: 160px;
+                height: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                img{
+                    width: 160px;
+                }
+            }
+        }
+    }
+    footer{
+        margin: 0;
+        background-color: #0F026F;
+        .cName{
+            margin: 0;
+            margin-left: 15px;
+            padding-top: 15px;
+            color: white;
+            font-family: "Hiragino Kaku Gothic ProN";
+            font-size: 16px;
+        }
+        .cInfo{
+            padding-bottom: 15px;
+            margin-left: 20px;
+            p{
+                margin: 0;
+                padding-top: 5px;;
+                color: white;
+                font-family: "Hiragino Kaku Gothic ProN";
+                font-size: 12px;
+            }
+        }
+        .mail{
+            display: none;
         }
     }
 }

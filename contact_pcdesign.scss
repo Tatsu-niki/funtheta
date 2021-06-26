@@ -71,11 +71,11 @@ header{
 }
 
 body {
-    background-color:#919191;
+    background-color:#afafaf;
     margin:0;
   }
   .container {
-    max-width:600px;
+    max-width:800px;
     margin:0 auto;
     text-align:center;
     -webkit-border-radius:6px;
@@ -86,7 +86,7 @@ body {
   p{
     margin-top: 10px;
     margin-bottom: 5px;
-    margin-left: 70px;
+    margin-left: 120px;
     text-align: left;
   }
   .head {
@@ -132,7 +132,7 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     width: 80%;
-    max-width: 600px;
+    max-width: 550px;
   }
   ::-webkit-input-placeholder {
      color: #FAFAFA;
@@ -180,7 +180,7 @@ body {
       border-radius:6px;
   }
   /* media queries */
-  @media (max-width: 700px) {
+  @media (max-width: 1000px) {
     label.error {
       width: 90%;
     }
