@@ -2,7 +2,6 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 @import url(https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap);
 html {
-  scroll-behavior: smooth;
   height: 100%;
   overflow-x: hidden; }
 
