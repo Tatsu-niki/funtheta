@@ -12,7 +12,9 @@ body{
     margin: 0;
     width: 100%;
     position: relative;
-    overflow-x: hidden;
+    .wrapper{
+        overflow-x: hidden;
+    }
     header{
         background-color: #FFB4F3;
         margin: 0;
