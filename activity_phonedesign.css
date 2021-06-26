@@ -9,7 +9,7 @@ html {
 body {
   height: 100%;
   margin: 0;
-  width: 100%; }
+  position: relative; }
   body .wrapper {
     overflow-x: hidden; }
   body header {
