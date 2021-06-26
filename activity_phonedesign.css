@@ -8,8 +8,7 @@ html {
 body {
   height: 100%;
   margin: 0;
-  width: 100%;
-  position: relative; }
+  width: 100%; }
   body .wrapper {
     overflow-x: hidden; }
   body header {
