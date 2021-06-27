@@ -78,6 +78,8 @@ body {
   margin: 0;
   position: relative;
   overflow-x: hidden; }
+  body .dummy {
+    display: none; }
   body .page_title {
     position: absolute;
     z-index: 1;

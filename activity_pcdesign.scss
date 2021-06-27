@@ -86,7 +86,10 @@ body{
     margin: 0;
     position: relative;
     overflow-x: hidden;
-    
+    .dummy{
+        display: none;
+    }
+
     .page_title{
         position: absolute;
         z-index: 1;
