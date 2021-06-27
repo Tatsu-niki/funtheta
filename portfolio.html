@@ -4,21 +4,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="portfolio_pcdesign.css" media="screen and (min-width: 900px)">
-  <link rel="stylesheet" href="smartstyle.css" media="screen and (max-width: 899px)">
+  <link rel="stylesheet" href="portfolio_pcdesign.css" media="screen and (min-width: 1000px)">
+  <link rel="stylesheet" href="portfolio_phonedesign.css" media="screen and (max-width: 999px)">
   <title>Funseta</title>
 </head>
 <header>
-    <div class="logo">
-        <img src="image/logo.jpg">
-    </div>
-    <div class="header_nav">
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="activity.html">Activity</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <div class="container">
+        <div class="logo">
+            <img src="image/logo.jpg">
+        </div>
+        <div class="header_nav">
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="activity.html">Activity</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
+        </div>
+
+        <div class="menu">
+            <input type="checkbox" id="input">
+            <label for="input">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+            <div id="content">
+            <label for="input">
+                <div id="batsu"><a>×</a></div>
+            </label>
+            <ul class="nav">
+                <li class="nav-list-item"><label for="batsu"><a href="index.html">Home</a></label></li>
+                <li class="nav-list-item"><label for="batsu"><a href="activity.html">Activity</a></label></li>
+                <li class="nav-list-item"><label for="batsu"><a href="portfolio.html">Portfolio</a></label></li>
+                <li class="nav-list-item"><label for="batsu"><a href="contact.html">Contact</a></label></li>
+            </ul>
+            </div>
+        </div>
     </div>
 </header>
 <body>
@@ -43,6 +65,15 @@
         <p class="work_day day_fright">Made:2021-02-15</p>
     </div>
 </div>
+<div class="phone_content2">
+    <div class="work">
+        <p class="work_title title_fright">イラスト</p>
+        <div class="line line_fright">
+        </div>
+        <p class="work_day day_fright">Made:2021-02-15</p>
+    </div>
+    <img src="image/portfolio2.png" class="img_fleft">
+</div>
 <div class="content3">
     <div class="work">
         <p class="work_title title_fleft">動画編集</p>
@@ -60,6 +91,15 @@
         </div>
         <p class="work_day day_fright">Made:2021-02-15</p>
     </div>
+</div>
+<div class="phone_content4">
+    <div class="work">
+        <p class="work_title title_fright">写真撮影</p>
+        <div class="line line_fright">
+        </div>
+        <p class="work_day day_fright">Made:2021-02-15</p>
+    </div>
+    <img src="image/portfolio4.png" class="img_fleft">
 </div>
 
 <footer>

@@ -4,6 +4,10 @@ header {
   height: 90px;
   background-color: #c2003a;
   display: flex; }
+  header .container {
+    width: 100%;
+    height: 100%;
+    display: flex; }
   header .logo {
     width: 150px;
     height: 90px;
@@ -63,6 +67,8 @@ header {
       /*互い違いに色を変える*/ }
     header .header_nav ul.nav li a:hover::before {
       background-color: #f77a72; }
+  header .menu {
+    display: none; }
 
 body {
   background-image: url("image/flowers.png");
@@ -246,6 +252,10 @@ body {
       margin-bottom: auto;
       margin-left: auto;
       margin-right: 75px; }
+  body .phone_content2 {
+    display: none; }
+  body .phone_content4 {
+    display: none; }
 
 footer {
   height: 225px;

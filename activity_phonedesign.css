@@ -12,8 +12,6 @@ body {
   margin: 0;
   position: relative;
   overflow-x: hidden; }
-  body .wrapper {
-    overflow-x: hidden; }
   body header {
     background-color: #FFB4F3;
     margin: 0;
