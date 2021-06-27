@@ -2,28 +2,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <link rel="icon" type="image/x-icon" href="image/logo.jpg">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="contact_pcdesign.css">
+    <link rel="stylesheet" href="contact_pcdesign.css" media="screen and (min-width: 1000px)">
+    <link rel="stylesheet" href="contact_phonedesign.css" media="screen and (max-width: 999px)">
     <title>Funtheta</title>
 </head>
 
 <header>
-    <div class="logo">
-        <img src="image/logo.jpg">
-    </div>
-    <div class="header_nav">
-        <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="activity.html">Activity</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            </ul>
-    </div>
+  <div class="container">
+      <div class="logo">
+          <img src="image/logo.jpg">
+      </div>
+      <div class="header_nav">
+          <ul class="nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="activity.html">Activity</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+
+      <div class="menu">
+          <input type="checkbox" id="input">
+          <label for="input">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+          </label>
+          <div id="content">
+          <label for="input">
+              <div id="batsu"><a>×</a></div>
+          </label>
+          <ul class="nav">
+              <li class="nav-list-item"><label for="batsu"><a href="index.html">Home</a></label></li>
+              <li class="nav-list-item"><label for="batsu"><a href="activity.html">Activity</a></label></li>
+              <li class="nav-list-item"><label for="batsu"><a href="portfolio.html">Portfolio</a></label></li>
+              <li class="nav-list-item"><label for="batsu"><a href="contact.html">Contact</a></label></li>
+          </ul>
+          </div>
+      </div>
+  </div>
 </header>
 
 <body>
 <form id="contact" action="thanks.php"　method="post">
-    <div class="container">
+    <div class="bcontainer">
       <div class="head">
         <h2>お問い合わせ</h2>
       </div>
@@ -49,6 +71,34 @@
       </button>
     </div>
   </form>
+
+  <footer>
+    <div class="info">
+        <p class = "cName">Funtheta</p>
+        <div class = "cInfo">
+            <p>〒 116-0004</p>
+            <p>神奈川県川崎市中原区新丸子東 2-925</p>
+            <p>TEL: 080-3702-1547</p>
+            <p>Mail: fantheta.web@gmail.com</p>
+        </div>
+    </div>
+    <div class="mail">
+        <div class="buttons">
+            <div class="buttons1">
+                <a href="index.html">-Home</a>
+                <a href="activity.html">-Activity</a>
+                <a href="portfolio.html">-Portfolio</a>
+                <a>-お問い合わせ</a>
+            </div>
+             <div class="buttons2">
+                <a>-制作費用</a>
+                <a>-WEBサイト制作</a>
+                <a>-写真・動画撮影</a>
+                <a>-名刺制作</a>
+            </div>
+         </div>
+    </div>
+</footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 // When the browser is ready...

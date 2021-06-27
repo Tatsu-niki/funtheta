@@ -1,74 +1,78 @@
 @charset "UTF-8";
 header {
-  margin: 0;
-  height: 90px;
   background-color: #2ABCA7;
+  margin: 0;
+  height: 60px;
   display: flex; }
   header .container {
     width: 100%;
-    height: 100%;
+    height: 60px;
     display: flex; }
+  header .header_nav {
+    display: none; }
   header .logo {
-    width: 150px;
-    height: 90px;
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    margin: 0;
+    height: 60px;
+    width: 60px;
     margin-left: 30px; }
     header .logo img {
-      margin-left: auto;
-      margin-right: auto;
-      width: 90px;
-      height: 90px;
-      object-fit: contain; }
-  header .logo::before {
-    width: 150px;
-    height: 90px;
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: white;
-    transform: skewX(-30deg);
-    z-index: -1; }
-  header .header_nav {
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 35px; }
-    header .header_nav ul.nav {
-      list-style: none;
-      display: flex;
-      /*横並びにする*/ }
-    header .header_nav ul.nav li {
-      text-align: center; }
-    header .header_nav ul.nav li a {
-      position: relative;
-      padding: 33px 45px;
-      text-decoration: none;
-      font-size: 24px;
-      color: white;
-      z-index: 1; }
-    header .header_nav ul.nav li a::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      z-index: -1;
-      background-color: #0bccb9;
-      transform: skewX(-30deg); }
-    header .header_nav ul.nav li:nth-child(odd) a::before {
-      background-color: #5fdad4;
-      /*互い違いに色を変える*/ }
-    header .header_nav ul.nav li a:hover::before {
-      background-color: #9bfde3; }
+      height: 60px;
+      width: 60px; }
+  header a {
+    text-decoration: none;
+    color: white; }
   header .menu {
-    display: none; }
+    padding: 0;
+    margin-right: 20px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto; }
+    header .menu #input {
+      display: none; }
+  header .line {
+    background-color: white;
+    width: 20px;
+    height: 3px;
+    display: block;
+    cursor: pointer;
+    margin: 4px;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 1.5px; }
+  header #content {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #2ABCA7;
+    background-color: #2ABCA7;
+    position: absolute;
+    display: Block;
+    margin: 0;
+    z-index: 100;
+    width: 100%;
+    height: 812px;
+    transform: translate(-100%, -1000px) translateX(40px); }
+  header #input:checked ~ #content {
+    transform: translate(-100%, -43px) translateX(40px);
+    transition-duration: 0.5s; }
+  header #batsu {
+    color: white;
+    padding: 0;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 85%; }
+  header .nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center; }
+    header .nav li {
+      color: white;
+      text-decoration: none;
+      font-family: "遊ゴシック", "Yu Gothic", "遊ゴシック体", "YuGothic";
+      font-size: 26px;
+      font-weight: Bold;
+      margin-top: 80px;
+      margin-left: auto;
+      margin-right: auto; }
 
 body {
   background-color: #afafaf;
@@ -186,48 +190,26 @@ body {
     border-radius: 6px; }
 
 footer {
-  height: 225px;
-  width: 100%;
   margin: 0;
   background-color: #2ABCA7;
-  display: flex; }
-  footer .info {
-    margin-top: 15px;
-    margin-left: 135px; }
-    footer .info .cInfo {
-      margin-left: 15px; }
-      footer .info .cInfo p {
-        color: white;
-        font-family: "Hiragino Kaku Gothic ProN";
-        font-size: 16px;
-        margin: 0;
-        margin-top: 7px; }
-    footer .info .cName {
+  width: 100%; }
+  footer .cName {
+    margin: 0;
+    margin-left: 15px;
+    padding-top: 15px;
+    color: white;
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 16px; }
+  footer .cInfo {
+    padding-bottom: 15px;
+    margin-left: 20px; }
+    footer .cInfo p {
+      margin: 0;
+      padding-top: 5px;
       color: white;
       font-family: "Hiragino Kaku Gothic ProN";
-      font-size: 27px;
-      margin: 0;
-      margin-top: 10px; }
+      font-size: 12px; }
   footer .mail {
-    margin-right: 225px;
-    margin-left: auto;
-    margin-top: 36px; }
-    footer .mail .contact {
-      margin: 0;
-      color: white;
-      font-family: "Hiragino Kaku Gothic ProN";
-      font-size: 27px; }
-    footer .mail .buttons {
-      display: flex; }
-      footer .mail .buttons a {
-        display: block;
-        color: white;
-        font-family: "Hiragino Kaku Gothic ProN";
-        font-size: 18px;
-        margin: 0;
-        margin-top: 7px;
-        text-decoration: none; }
-      footer .mail .buttons .buttons1 {
-        margin-right: 75px; }
+    display: none; }
 
-/*# sourceMappingURL=contact_pcdesign.css.map */
+/*# sourceMappingURL=contact_phonedesign.css.map */

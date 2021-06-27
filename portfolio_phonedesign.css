@@ -92,7 +92,8 @@ body {
     font-size: 50px;
     margin-bottom: 0; }
   body .content1 {
-    display: Block; }
+    display: Block;
+    margin-bottom: 100px; }
     body .content1 .work {
       margin-top: auto;
       margin-bottom: auto;
@@ -133,7 +134,8 @@ body {
   body .content2 {
     display: none; }
   body .phone_content2 {
-    display: Block; }
+    display: Block;
+    margin-bottom: 100px; }
     body .phone_content2 .work {
       margin-top: auto;
       margin-bottom: auto;
@@ -172,7 +174,8 @@ body {
       margin-left: 10%;
       margin-right: auto; }
   body .content3 {
-    display: Block; }
+    display: Block;
+    margin-bottom: 100px; }
     body .content3 .work {
       margin-top: auto;
       margin-bottom: auto;
